@@ -17,6 +17,28 @@
 
   <script>
     // Step 3.2 - Replace the below config with your actual Firebase project config
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC0-B0hnaJEHczUuGfabN5XN6SCf4KXUa4",
+  authDomain: "micro-learn-407c3.firebaseapp.com",
+  databaseURL: "https://micro-learn-407c3-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "micro-learn-407c3",
+  storageBucket: "micro-learn-407c3.firebasestorage.app",
+  messagingSenderId: "449808100660",
+  appId: "1:449808100660:web:57f6898abc07c3cd2b4961",
+  measurementId: "G-QRXB8GVK4K"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
     const firebaseConfig = {
       apiKey: "YOUR_API_KEY",
       authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
